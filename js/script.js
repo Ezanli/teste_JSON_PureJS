@@ -5,7 +5,7 @@ $(document).ready(function() {
         	var elements = ind -1;
             $('.product').eq(elements).append('<img src="assets/' + value.image + ' " />');
             $('.product').eq(elements).append('<span class="product_name">' + value.name + " - " + '</span>');
-            $('.product').eq(elements).append('<span class="product_price">' + value.price + '</span>');
+            $('.product').eq(elements).append('<span class="product_price">' + '$' + value.price + '</span>');
         });
     });
 
@@ -55,7 +55,7 @@ xmlhttp.onreadystatechange = function() {
 				    						'<span class="txt_tit">Ingredients:</span>' +
 				    						'<ul>' + line + '</ul>' +
 				    						'<span class="txt_tit"><b>Price</b></span>' +
-				    						'<span id="txt_price">' + obj.potions[id].price + '</span>' +
+				    						'<span id="txt_price">' + '$' + obj.potions[id].price + '</span>' +
 				    						'<button class="default_transition">add to chart</button>'	+
 				    					'</div>' +						
 			    					  '</div>';
