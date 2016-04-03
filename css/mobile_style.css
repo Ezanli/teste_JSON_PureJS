@@ -1,0 +1,110 @@
+/*lightbox*/
+#lightbox_bg{
+	background-color: #ffffff;
+	background-image: none;
+}
+
+#lightbox{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	padding: 0;
+}
+#lightbox img{
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+}
+#lightbox_right_side{
+	overflow: auto;
+	width: 100%;
+	height: 38%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: scroll;
+}
+
+/*header*/
+#header_box input, #order_text_box, #nav_box{display: none;}
+
+#header_content{
+	margin: 0 auto;
+	width: 250px;
+	padding: 10px 0;
+}
+
+#mobile_burger{
+	background: url("../assets/burger.jpg") no-repeat center;
+	width: 34px;
+	height: 21px;
+	display: inline-block;
+	position: absolute;
+	left: 4%;
+	top: 32px;
+}
+
+#main_logo{margin: 0;}
+
+#bag_box{
+	width: 50px;
+	top: 13px;
+	left: 88%;
+	position: absolute;
+}
+#bag_box img{margin: 0 auto;}
+
+#mobile_shipping{
+	display: inline-block;
+	width: 100%;
+	padding: 5px 0;
+	background-color: #ececec;
+	font-size: 1.5em;
+	color: #676767;
+	text-align: center;
+}
+
+/*products*/
+#products_box h2{text-align: center;}
+
+.product{
+	width: 49%;
+	margin: 25px 0;
+}
+
+.product_name{
+	width: 60%;
+	text-align: right;
+}
+.product_price{
+	width: 40%;
+	text-align: left;
+}
+
+/*Footer*/
+@media(max-width: 676px){
+	#mobile_footer{
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	#footer_box{padding: 20px 0;}
+
+	#footer_box ul:first-child{display: none;}
+	#footer_box ul:nth-child(2){
+		width: 100%;
+		position: relative;
+		top: 120px;
+	}
+
+	.footer_social{margin-left: 30px;}
+	#copyright{
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	#news_box{
+		padding: 13px;
+	    width: 100%;
+		top: -70px;
+	}
+}
